@@ -1,0 +1,7 @@
+{
+    "mongoURI": "mongodb+srv://kareem123:123@cluster0-tm5fz.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken",
+    "githubClientId":"f76bb9409361721c2c6c",
+    "githubSecret":"6e910c3d7f2dfb0d193906f8d61bcfd5a8878bf0"
+
+}
