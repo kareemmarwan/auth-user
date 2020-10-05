@@ -77,6 +77,7 @@ router.post(
   }
 );
 
+// Please enter your email here to send the code  الخطوة الاولة اذخال الايميل 
 router.post("/restpassword", async (req, res) => {
   const email = req.body.email;
   
@@ -92,6 +93,7 @@ router.post("/restpassword", async (req, res) => {
   res.send("code sent your email");
 });
 
+// Please enter the code الخطوة التانية 
 router.post("/configcode", async (req, res) => {
   let user = await User.findOne({ email: req.body.email });
   let code = user.code;
@@ -102,6 +104,7 @@ router.post("/configcode", async (req, res) => {
   }
 });
 
+// Enter the new password
 router.post("/resP", async (req, res) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email: email });
